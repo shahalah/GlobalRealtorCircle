@@ -48,16 +48,33 @@
         <div id="reg-box">
             <h2 style="text-align: center;">Agent Registration</h2>
             <form id="agentForm">
-                <div class="input-group">
-                    <label>Full Name</label>
-                    <input type="text" name="name" id="userName" required placeholder="Enter your full name">
-                </div>
-                <div class="input-group">
-                    <label>Email Address</label>
-                    <input type="email" name="email" id="userEmail" required placeholder="Enter your email">
-                </div>
-                <button type="submit" class="btn-gold" id="submitBtn">Start Certification Training <i class="fas fa-arrow-right"></i></button>
-            </form>
+    <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" name="name" id="userName" required placeholder="Enter your full name">
+    </div>
+    <div class="input-group">
+        <label>Email Address</label>
+        <input type="email" name="email" id="userEmail" required placeholder="Enter your email">
+    </div>
+    <div class="input-group">
+        <label>Phone Number</label>
+        <input type="tel" name="phone" id="userPhone" required placeholder="Enter your phone number">
+    </div>
+    <div class="input-group">
+        <label>Gender</label>
+        <select name="gender" id="userGender" style="width: 100%; padding: 15px; border: 2px solid #eef0f2; border-radius: 10px; font-size: 1rem;">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label>Current Position / Occupation</label>
+        <input type="text" name="position" id="userPosition" required placeholder="e.g. Student, Job, Business">
+    </div>
+    <button type="submit" class="btn-gold" id="submitBtn">Start Certification Training <i class="fas fa-arrow-right"></i></button>
+</form>
         </div>
 
         <div id="course-content" style="display: none;">
@@ -269,3 +286,4 @@
 </body>
 
 </html>
+
