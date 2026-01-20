@@ -191,15 +191,14 @@
         }
     };
 
-    form.addEventListener('submit', e => {
+form.addEventListener('submit', e => {
         e.preventDefault();
         const btn = document.getElementById('submitBtn');
         const userEmail = document.getElementById('userEmail').value.toLowerCase().trim();
         const userName = document.getElementById('userName').value;
 
-        // ডুপ্লিকেট চেক (Device level)
         if (localStorage.getItem('registeredEmail') === userEmail && localStorage.getItem('isLoggedIn') !== 'true') {
-            alert("This email has already been used for certification on this device.");
+            alert("This email has already been used on this device.");
             return;
         }
 
@@ -286,4 +285,5 @@
 </body>
 
 </html>
+
 
